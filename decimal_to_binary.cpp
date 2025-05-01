@@ -25,6 +25,8 @@ int main () {
 
     //then flip the number (loop through?)
 
+    reverse(binString.begin(), binString.end());
+
     cout << binString << endl;
 
 }
