@@ -1,13 +1,9 @@
-// Write	two versions of	a	program	that	reads	a	positive	integer	n,	and	prints	the	first	n even	
-// numbers.	
-// a) In	the	first,	use	a	while loop.	
-// b) In	the	second,	use	a	for loop.	
-// Each	section	should	interact	with	the	user	exactly as	it	shows	in	the	following	example:
-
 #include <iostream>
 using namespace std;
 
 int main() {
+
+    cout << "While loop implementation below: " << endl;
 
     int n;
     int counter = 1;
@@ -24,6 +20,15 @@ int main() {
         counter = counter + 1;
 
 
+    }
+
+    cout << "for loop implementation below: " << endl;
+
+
+    for (counter = 1; counter <= n; counter++ ) {
+
+        cout << counter * 2 << endl;
+        
     }
 
     return 0;
