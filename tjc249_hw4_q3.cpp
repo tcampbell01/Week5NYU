@@ -1,32 +1,50 @@
 #include <iostream>
-#include <string>
+#include <cmath>
 using namespace std;
 
-int main() {
+int main()
+{
 
-    int decimal;
-    int original_decimal;
+    int decimal = 0;
+    int power = 0;
+    int base = 2;
+    int i;
 
-    string binString = ""; //output binary string
-
-   
     cout << "Enter decimal number: " << endl;
-    cin >> original_decimal;
+    cin >> decimal;
 
-    decimal = original_decimal;
+    while (pow(base, power) <= decimal)
+    {
+        power = power + 1;    
+    }
 
-    while(decimal > 0) {
-        int remainder = decimal % 2;
-        binString = binString + to_string(remainder);
-        decimal = decimal / 2;
-    };
+    //subtract one to start adding place values
+    power = power -1;
 
+    
+    cout << "The binary representation of " << decimal << " is ";
+    cout << "1"; 
+    
+    decimal = decimal - (pow(base, power)); 
+    
+    power = power - 1;
+   
 
-    reverse(binString.begin(), binString.end());
+        while (power > -1 ) {
+            if (decimal >= (pow(base,power))) {
+                cout << "1";
+                decimal = decimal - (pow(base,power));
+                power = power - 1;
+              
+        } 
+            else {
+                cout << "0";
+                power = power - 1;
+                
 
-    cout << "The binary representation of " << original_decimal <<  " is " << binString << endl;
+        }
+    }
+    cout << " " << endl;
 
     return 0;
-
-
 }
