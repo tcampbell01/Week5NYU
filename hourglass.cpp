@@ -17,11 +17,11 @@ int main()
     cin >> n;
 
 
-    number_of_lines = 2 * n - 1;
+    number_of_lines = 2 * n;
 
     
-    number_of_stars_left = (number_of_lines - 1) / 2;
-    number_of_stars_right = (number_of_lines - 1) / 2;
+    number_of_stars_left = (number_of_lines - 2) / 2;
+    number_of_stars_right = (number_of_lines - 2) / 2;
 
     while (number_of_stars_left != 0)
     {
@@ -45,7 +45,7 @@ int main()
     cout << middle_star;
     std::cout << std::string(number_of_spaces_right, ' ') << std::endl;
 
-    while (number_of_stars_left != (number_of_lines - 1) / 2)
+    while (number_of_stars_left != (number_of_lines - 2) / 2)
     {
 
         number_of_stars_left = number_of_stars_left + 1;
