@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
 
-    cout << "Section A below: " << endl;
+    // cout << "Section A below: " << endl;
 
     int length;
     int sequence;
@@ -32,10 +32,12 @@ int main() {
 
      geometric_mean = pow(base, root);
 
-     std::cout << std::fixed << std::setprecision(4) << "The geometric root is: " << geometric_mean << endl;
+     std::cout << std::fixed << std::setprecision(4) << "The geometric mean is: " << geometric_mean << endl;
+
+    
 
 
-     cout << "Section B below: " << endl;
+//      cout << "Section B below: " << endl;
 
     int sequence = 0;
     double geometric_mean;
@@ -63,7 +65,7 @@ int main() {
 
      geometric_mean = pow(base, root);
 
-     std::cout << std::fixed << std::setprecision(4) << "The geometric root is: " << geometric_mean << endl;
+     std::cout << std::fixed << std::setprecision(4) << "The geometric mean is: " << geometric_mean << endl;
 
 
     return 0;
